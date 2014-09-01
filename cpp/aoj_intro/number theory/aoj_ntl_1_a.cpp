@@ -1,12 +1,9 @@
 #include<iostream>
 #include<cmath>
- 
 using namespace std;
  
 int main(){
- 
-    int n;
- 
+    int n; 
     cin>>n;
     cout<<n<<":";
     for(int i=2;i<=sqrt((double)n);){

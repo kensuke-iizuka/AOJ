@@ -1,18 +1,12 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <algorithm>
+#include <functional>
 using namespace std;
-
+int height[100];
 int main(){
-    int n;
-    vector<int> vi;
-    for(int i=0;i<10;i++){
-	scanf("%d",&n);
-    	vi.push_back(n);
-    }
-    sort(vi.begin(),vi.end(),greater<int>());
-    for(int i=0;i<3;i++){
-    	cout << vi[i] << endl;
-    }
-    return 0;
+    for(int i=0;i<10;i++)
+        cin >> height[i];
+    sort(height,height+10,greater<int>());
+    for(int i=0;i<3;i++)
+        cout << height[i] << endl;
 }
